@@ -1,0 +1,22 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "learn webpack",
+  "main": "app.bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZengJunyong/webpack.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "yong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZengJunyong/webpack/issues"
+  },
+  "homepage": "https://github.com/ZengJunyong/webpack#readme"
+}
