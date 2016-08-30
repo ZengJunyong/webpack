@@ -1,4 +1,6 @@
-console.log('start webpack');
+console.log('~~~~Hello, YONG, Starting webpack~~~~');
+
+const webpack = require('webpack');
 
 module.exports = {
     entry: './src/app.js',
@@ -8,9 +10,19 @@ module.exports = {
     },
     module: {
         loaders: [{
-            test: /\.js$/,
+            test: /\.jsx?$/,
             exclude: /node_modules/,
             loader: 'babel-loader',
         }]
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false,
+            },
+            output: {
+                comments: false,
+            },
+        }),
+    ]
 }
