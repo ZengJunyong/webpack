@@ -24,8 +24,5 @@ module.exports = {
                 comments: false,
             },
         }),
-    ],
-    watch:{
-
-    }
+    ]
 }
